@@ -1,16 +1,14 @@
 "use client";
-import { ComponentProps } from "react";
+
 import { BuilderComponent, useIsPreviewing } from "@builder.io/react";
 import { builder } from "@builder.io/sdk";
 import DefaultErrorPage from "next/error";
 import "../builder-registry";
 
-type BuilderPageProps = ComponentProps<typeof BuilderComponent>;
-
 // Builder Public API Key set in .env file
-builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
+builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
-export function RenderBuilderContent({ content, model }: BuilderPageProps) {
+export function RenderBuilderContent({ content, model }) {
   // Call the useIsPreviewing hook to determine if
   // the page is being previewed in Builder
   const isPreviewing = useIsPreviewing();
