@@ -40,3 +40,70 @@ a {
     color-scheme: dark;
   }
 }
+
+.mr-2{
+  margin-right: 2em;
+}
+
+.button.primary{
+  background-color: #4881b9;
+  border: 1px solid #4881b9;
+}
+
+.button.primary:hover {
+  background-color: #3b8bdc;
+  border-color: #3b8bdc;
+}
+
+.button.primary:focus {
+  background-color: #3b8bdc;
+  border-color: #3b8bdc;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button.primary:active {
+  background-color: #3b8bdc;
+  background-image: none;
+  border-color: #3b8bdc;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+/* CSS */
+.button {
+  appearance: button;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button:focus:not(:focus-visible),
+.button:focus {
+  outline: 0;
+}
+
+.button:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}
